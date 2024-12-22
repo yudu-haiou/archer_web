@@ -9,7 +9,7 @@ st.write("I participated in the First LEGO League robotics match! It was an exci
 # Display images
 col1, col2 = st.columns(2)
 with col1:
-    st.image(r"imgs/archer_robotics.jpg", caption="My LEGO robot")
+    st.image(r"imgs/archer_robotics.JPG", caption="My LEGO robot")
 with col2:
     st.image(r"imgs/archer_soccer.jpg", caption="Our awesome team")
 
