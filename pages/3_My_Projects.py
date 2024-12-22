@@ -9,9 +9,9 @@ st.write("I participated in the First LEGO League robotics match! It was an exci
 # Display images
 col1, col2 = st.columns(2)
 with col1:
-    st.image("./imgs/archer_robotics.jpg", caption="My LEGO robot")
+    st.image(r"imgs/archer_robotics.jpg", caption="My LEGO robot")
 with col2:
-    st.image("./imgs/archer_soccer.jpg", caption="Our awesome team")
+    st.image(r"imgs/archer_soccer.jpg", caption="Our awesome team")
 
 # Display video
 st.video("./imgs/archer_match.mp4")
@@ -48,12 +48,12 @@ st.markdown("""
 # Display soccer images
 col1, col2 = st.columns(2)
 with col1:
-    st.image("./imgs/archer_metal.jpg", caption="My tournament trophy")
+    st.image(r"imgs/archer_metal.jpg", caption="My tournament trophy")
 with col2:
-    st.image("./imgs/archer_team.jpg", caption="Action shot from a match")
+    st.image(r"imgs/archer_team.jpg", caption="Action shot from a match")
 
 # Add soccer video highlights
-st.video("./imgs/archer_goal.mp4")
+st.video(r"imgs/archer_goal.mp4")
 
 # Add interactive element for soccer
 if st.button("Show Soccer Fun Fact"):
