@@ -1,4 +1,10 @@
 import streamlit as st
+from PIL import Image
+
+def resize_img(file_path):
+    img = Image.open(file_path)
+    new_size = (350, 380)
+    return img.resize(new_size, Image.LANCZOS)
 
 st.header("My interests")
 st.write("Check out some of the cool things I've made and do!")
@@ -19,24 +25,29 @@ st.video(r"imgs/archer_match.MP4")
 
 st.write("My Achievements:")
 st.markdown("""
-- Won the local junior league tournament
-- Scored 15 goals last season
-- His soccer team is number 20th in the state
+- I won the local junior league tournament
+- I scored 15 goals last season
+- My soccer team is number 20th in the US
 """)
 
 st.write("My Experiences")
 col1, col2 = st.columns(2)
 with col1:
     st.image(r"imgs/ICI C'EST PARIS.jpg", caption="PSG soccer camp in Miami")
+    # st.image(resize_img("imgs/ICI C'EST PARIS.jpg"), caption="PSG soccer camp in Miami")
 with col2:
-    st.image(r"imgs/MARCET.jpg", caption="Marcet soccer camp in Barcalona")
+    st.image(r"imgs/MARCET.jpg", caption="Marcet soccer camp in Barcalona, Spain")
+    # st.image(resize_img("imgs/MARCET.jpg"), caption="Marcet soccer camp in Barcalona, Spain")
+
+st.write("My medals")
+st.image(r"imgs/Medals.jpg", caption = "my medals")
 
 # Display soccer images
 col1, col2 = st.columns(2)
 with col1:
     st.image(r"imgs/archer_metal.JPG", caption="My tournament medals")
 with col2:
-    st.image(r"imgs/archer_team.JPG", caption="A photo with his team")
+    st.image(r"imgs/archer_team.JPG", caption="A photo with my team")
 
 # Add soccer video highlights
 st.video(r"imgs/archer_goal.MP4")
@@ -70,15 +81,15 @@ if st.button("Show Fun Fact"):
     st.write("Did you know? The First LEGO League was founded in 1998 and now involves over 320,000 children worldwide!")
 
 
-st.subheader("coding achievment")
+st.subheader("coding achievments")
 st.markdown("""
-- learned many coding languages
-- created this with streamlit 
-- made a game called pong in python
-- wants to be able to create a website with javascript
+- I learned the following coding languages: Python, HTML, JavaScript, Scratch
+- I created this personal portfilio website by streamlit 
+- I finished my coding projects, including pong game by python, static webpage by JavaScript, etc.
 """)
 
 st.video(r"imgs/rescue-screen-capture.mp4")
+st.write("The purpose of this video is to show how drones can patrol the area with charging stations in the water. So then the swimmers could get saved more easily. The process starts out with drones depatched from the base. Then the make a loop to see if there is any swimmers. When on drone detects a swimmer it sends a signal to the boats nearby and the boats save the swimmer.")
 
-st.write("here is one of the projects Archer made, https://www.codesters.com/preview/ca36c58532804b4ea29e83201f9f99fd/")
+st.write("here is one of the projects I made, https://www.codesters.com/preview/ca36c58532804b4ea29e83201f9f99fd/")
 

@@ -5,7 +5,8 @@ with col1:
     st.write("Here are some things about me:")
     st.markdown("""
     - I'm 10 years old
-    - My favorite subject in school is Classics(it is history)
+    - My favorite subject in school is Classics(it is also known as history)
+    - I play competitive soccer
     - I like to put effort in making things look better
     - I like to do graphs and linear equations in math
     - I like to do coding and understand new coding languages
