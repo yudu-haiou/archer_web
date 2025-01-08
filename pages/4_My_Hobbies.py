@@ -4,15 +4,15 @@ from streamlit_pdf_viewer import pdf_viewer
 st.title("Hobbies")
 
 st.subheader("Creative Writing")
-st.write("I used to really like writing stories, but it isn't my main interest anymore. I write many fictional stories with unreal characters. I wrote a story and published it to the inklings contest, where it got chosen for one of the best stories.")
-pdf_viewer(r"./imgs/Puffin Planet - example.pdf")
+st.write("I enjoy writing things when I have the time to do so. I write many fictional stories with unreal characters. I wrote a story and published it to the inklings contest, where it got chosen for one of the best stories.")
+pdf_viewer(r"./imgs/Puffin Planet - example.pdf", width = 300)
 
 
 # with st.popover("Open popover", use_container_width=True):
 #     pdf_viewer(r"./imgs/Puffin Planet - example.pdf", key="second pdf")
 
 st.subheader("Piano")
-st.write("I started playing piano at an age of four. I like songs that are happy and cheerful, not sad and gloomy. I've done 7 recitals and now I am practicing a 10 page long song.")
+st.write("I started playing piano at an age of four because I really relish music and wanted to play them myself. I like songs that are happy and cheerful, not sad and gloomy. I've done 7 recitals and now I am practicing a 10 page long song.")
 st.video(r"imgs/piano.mp4")
 
 st.subheader("Swimming")

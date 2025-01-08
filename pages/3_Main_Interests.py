@@ -26,21 +26,25 @@ st.video(r"imgs/archer_match.MP4")
 st.write("My Achievements:")
 st.markdown("""
 - I won the local junior league tournament
+- I have six gold medals and many more silver medals in soccer
 - I scored 15 goals last season
-- My soccer team is number 20th in the US
+- My soccer team is number 25th in the US
 """)
 
-st.write("My Experiences")
+st.write("My Experiences and medals")
 col1, col2 = st.columns(2)
 with col1:
-    st.image(r"imgs/ICI C'EST PARIS.jpg", caption="PSG soccer camp in Miami")
+    st.image(r"imgs/BacaFCInSpain.jpg", caption="Barca FC Summer Camp in Barcelona,Spain,Europe")
+    st.image(r"imgs/MARCET.jpg", caption="Marcet soccer camp in Barcelona, Spain")
     # st.image(resize_img("imgs/ICI C'EST PARIS.jpg"), caption="PSG soccer camp in Miami")
 with col2:
-    st.image(r"imgs/MARCET.jpg", caption="Marcet soccer camp in Barcalona, Spain")
+    st.image(r"imgs/ICI C'EST PARIS_corp.jpg", caption="PSG soccer camp in Miami")
+   
+    st.image(r"imgs/Medals.jpg", caption = "my medals")
     # st.image(resize_img("imgs/MARCET.jpg"), caption="Marcet soccer camp in Barcalona, Spain")
 
-st.write("My medals")
-st.image(r"imgs/Medals.jpg", caption = "my medals")
+# st.write("My medals")
+# st.image(r"imgs/Medals.jpg", caption = "my medals", width=300)
 
 # Display soccer images
 col1, col2 = st.columns(2)
@@ -72,9 +76,11 @@ st.markdown("""
 - **Robot Design**: We built our robot using LEGO Mindstorms, incorporating sensors and motors to navigate the challenge field.
 - **Programming**: I learned how to program our robot using block-based coding to complete specific tasks.
 - **Teamwork**: Working with my teammates, we solved problems and improved our robot's performance.
+- **Innovation Project**: In our innovation project, we represented our team and created slides about our robot design and our idea to help people who are in need of help in the ocean. After the competition, we won the medal for having the best innovation project!
 - **Competition Day**: We competed against other teams, presenting our robot design and completing missions on the challenge field.
 """)
 
+st.image(r"imgs/InovationAward.jpg", caption="FLL Innovation Award", width=300)
 
 # Add an interactive element
 if st.button("Show Fun Fact"):
@@ -87,9 +93,20 @@ st.markdown("""
 - I created this personal portfilio website by streamlit 
 - I finished my coding projects, including pong game by python, static webpage by JavaScript, etc.
 """)
+col1, col2, col3 = st.columns(3)
+st.subheader("coding projects: Star War, Header, RPS")
+with col1:
+    # st.video(r"imgs/starwar.mp4")
+    st.image(r"imgs/starwar.gif", caption="Star war")
+with col2:
+    # st.video(r"imgs/Header.mp4")
+    st.image(r"imgs/Header.gif", caption="Header")
+with col3:
+    # st.video(r"imgs/RPS.mp4")
+    st.image(r"imgs/RPS.gif", caption="RPS")
 
 st.video(r"imgs/rescue-screen-capture.mp4")
-st.write("The purpose of this video is to show how drones can patrol the area with charging stations in the water. So then the swimmers could get saved more easily. The process starts out with drones depatched from the base. Then the make a loop to see if there is any swimmers. When on drone detects a swimmer it sends a signal to the boats nearby and the boats save the swimmer.")
+st.write("The purpose of this video is to show how drones can patrol the area with charging stations in the water. So then the swimmers could get saved more easily. The charging stations are powered by the ocean waves, this is environmental friendly and safe for swimmers nearby. The process starts out with drones depatched from the base. Then the make a loop to see if there is any swimmers. When on drone detects a swimmer it sends a signal to the boats nearby and the boats save the swimmer.")
 
-st.write("here is one of the projects I made, https://www.codesters.com/preview/ca36c58532804b4ea29e83201f9f99fd/")
+# st.write("here is one of the projects I made, https://www.codesters.com/preview/ca36c58532804b4ea29e83201f9f99fd/")
 
