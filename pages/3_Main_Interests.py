@@ -94,7 +94,7 @@ st.markdown("""
 - I finished my coding projects, including pong game by python, static webpage by JavaScript, etc.
 """)
 col1, col2, col3 = st.columns(3)
-st.subheader("coding projects: Star War, Header, RPS")
+# st.subheader("coding projects: Star War, Header, RPS")
 with col1:
     # st.video(r"imgs/starwar.mp4")
     st.image(r"imgs/starwar.gif", caption="Star war")
