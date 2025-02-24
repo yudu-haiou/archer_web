@@ -25,11 +25,19 @@ st.video(r"imgs/archer_match.MP4")
 
 st.write("My Achievements:")
 st.markdown("""
+- I won the NorCal State Cup Champion U11
 - I won the local junior league tournament
 - I have six gold medals and many more silver medals in soccer
 - I scored 15 goals last season
-- My soccer team is number 25th in the US
+- My soccer team is number 2nd in the US
 """)
+
+st.write("Norcal Soccer State Cup Champion U11")
+col1, col2 = st.columns(2)
+with col1:
+    st.image(r"imgs/norcal_champion.jpg", caption="Norcal Soccer State Cup Champion")
+with col2:
+    st.image(r"imgs/norcal_champion.mp4", caption="Award Ceremony of Norcal State Cup Champion")
 
 st.write("My Experiences and medals")
 col1, col2 = st.columns(2)
