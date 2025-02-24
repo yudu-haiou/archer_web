@@ -35,10 +35,12 @@ st.markdown("""
 st.write("Norcal Soccer State Cup Champion U11")
 col1, col2 = st.columns(2)
 with col1:
-    st.image(r"imgs/norcal_champion.jpg", caption="Norcal Soccer State Cup Champion")
+    st.image(r"imgs/archer_norcal_champion.jpg", caption="Norcal Soccer State Cup Champion")
 with col2:
-    st.video(r"imgs/norcal_champion.mp4")
-    st.markdown("Award Ceremony of Norcal State Cup Champion")
+    st.image(r"imgs/norcal_champion.jpg", caption="Norcal Soccer State Cup Champion")
+
+st.video(r"imgs/norcal_champion.mp4")
+st.markdown("Award Ceremony of Norcal State Cup Champion")
 
 st.write("My Experiences and medals")
 col1, col2 = st.columns(2)
